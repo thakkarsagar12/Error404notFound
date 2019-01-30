@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: rest-basics
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+    open-in-view: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: ["*"]
